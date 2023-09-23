@@ -22,3 +22,4 @@ console.log(array1[0]);
 console.log(array1.length);
 var array2 = [123, "AngularJS", true];
 console.log(array2);
+
