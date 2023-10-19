@@ -8,8 +8,12 @@ function add(num1:number,num2:number):number {
     return num1+num2;
 }
 
-function calculator(fun:any):void {
-    console.log(fun(10,20));
+function calculator():any {
+    function subtract(num1:number,num2:number):number {
+        return num1-num2;
+    }
+
+    return subtract;
 } 
 
 console.log("Sum is: "+add(10,20));
@@ -22,4 +26,6 @@ function display(id:number,name:string,role:string="Normal") {
 
 display(1,"Remy");
 
-calculator(add);
+var sub = calculator();
+console.log(sub(20,5));
+console.log(calculator()(20,5));
