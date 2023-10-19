@@ -8,6 +8,10 @@ function add(num1:number,num2:number):number {
     return num1+num2;
 }
 
+function calculator(fun:any):void {
+    console.log(fun(10,20));
+} 
+
 console.log("Sum is: "+add(10,20));
 
 function display(id:number,name:string,role:string="Normal") {
@@ -17,3 +21,5 @@ function display(id:number,name:string,role:string="Normal") {
 }
 
 display(1,"Remy");
+
+calculator(add);
