@@ -1,5 +1,5 @@
-function hello():string{
-    return "Hello";
+function hello(name:string):string{
+    return "Hello" + name;
 }
 
-console.log(hello());
+console.log(hello("RemyMeier"));
