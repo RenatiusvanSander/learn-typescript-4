@@ -10,10 +10,10 @@ function add(num1:number,num2:number):number {
 
 console.log("Sum is: "+add(10,20));
 
-function display(id:number,name:string,role:string) {
+function display(id:number,name:string,role:string="Normal") {
     console.log("Id", id);
     console.log("Name",name);
     console.log("Role", role);
 }
 
-display(1,"Remy","Meier");
+display(1,"Remy");
