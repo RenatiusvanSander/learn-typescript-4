@@ -1,6 +1,6 @@
-function hello(name) {
+var hello = function (name) {
     return "Hello" + name;
-}
+};
 console.log(hello("RemyMeier"));
 function add(num1, num2) {
     return num1 + num2;
@@ -22,3 +22,4 @@ display(1, "Remy");
 var sub = calculator();
 console.log(sub(20, 5));
 console.log(calculator()(20, 5));
+console.log(hello("Remy"));

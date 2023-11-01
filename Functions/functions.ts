@@ -1,4 +1,4 @@
-function hello(name:string):string{
+var hello = function (name:string):string{
     return "Hello" + name;
 }
 
@@ -29,3 +29,5 @@ display(1,"Remy");
 var sub = calculator();
 console.log(sub(20,5));
 console.log(calculator()(20,5));
+
+console.log(hello("Remy"));
