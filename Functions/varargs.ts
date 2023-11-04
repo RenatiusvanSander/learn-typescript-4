@@ -1,4 +1,4 @@
-var product = function(...nums) {
+var product = function(x:number, y:number, ...nums:number[]) {
     var product = 1;
 
     for(var i = 0; i < nums.length; i++) {

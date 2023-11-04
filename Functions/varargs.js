@@ -1,7 +1,7 @@
-var product = function () {
+var product = function (x, y) {
     var nums = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        nums[_i] = arguments[_i];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        nums[_i - 2] = arguments[_i];
     }
     var product = 1;
     for (var i = 0; i < nums.length; i++) {
