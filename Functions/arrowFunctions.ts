@@ -8,3 +8,13 @@ var multiply = (num1:number, num2:number):number=>{
 
 console.log(hello(" Remy"));
 console.log("Product is " + multiply(5,8));
+
+var myarray:Array<any> = [];
+
+for(var i = 0; i < 10; i++) {
+    myarray.push(():number=>{return i;} );
+}
+
+for(var i = 0; i < 10; i++) {
+    console.log(myarray[i]());
+}
