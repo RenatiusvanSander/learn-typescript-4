@@ -9,5 +9,5 @@ var product1:Product = {
     id:123,
     name:"Remy",
     description:"Remy product",
-    price:12.56;
+    price:12.56
 }
