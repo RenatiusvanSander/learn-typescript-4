@@ -1,5 +1,5 @@
 interface Add {
-    (x:number, y:number):void
+    (x:number, y:number):number
 }
 
 interface Sub {
@@ -9,8 +9,9 @@ interface Sub {
 var add:Add;
 var sub:Sub;
 
-add=function(x:number, y:number):void {
+add=function(x:number, y:number):number {
     console.log(x+y);
+    return x + y;
 }
 
 sub=function(x:number, y:number):number {
