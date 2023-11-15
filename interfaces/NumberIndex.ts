@@ -3,3 +3,17 @@ interface StudentName {
 }
 
 var studentNames:StudentName = ["John","Boh", "doug"];
+
+interface StudentScore {
+    [index:string]:number;
+}
+
+var studentScores : StudentScore = {};
+
+studentScores["John"] = 100;
+studentScores["Bob"] = 90;
+
+for(var item in studentScores) {
+    console.log(item);
+    console.log(studentScores[item]);
+}
