@@ -25,8 +25,8 @@ for(let item in passenger) {
     if(passenger[item] instanceof Function) {
         continue;
     } else {
-console.log(item);
-    console.log(passenger[item]);
+        console.log(item);
+        console.log(passenger[item]);
     }
     
 }
