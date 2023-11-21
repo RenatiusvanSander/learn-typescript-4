@@ -25,6 +25,11 @@ class BMW {
 class ThreeSeries extends BMW {
     cruiseControlEnabled:boolean;
 
+    cruiseControl() {
+        this.cruiseControlEnabled = true;
+        console.log("Cruising");
+    }
+
     constructor(make:string, model:string, year:string, cruiseControlEnabled:boolean) {
         super(make,model,year);
         this.cruiseControlEnabled = cruiseControlEnabled;
@@ -33,6 +38,11 @@ class ThreeSeries extends BMW {
 
 class FiveSeries extends BMW {
     parkingAssistEnabled:boolean;
+
+    parkingAssist() {
+        this.parkingAssistEnabled = true;
+        console.log("assist parking");
+    }
 
     constructor(make:string, model:string, year:string, parkingAssistEnabled:boolean) {
         super(make,model,year);
@@ -45,9 +55,17 @@ console.log(threeSeries.cruiseControlEnabled);
 console.log(threeSeries.make);
 console.log(threeSeries.model);
 console.log(threeSeries.year);
+threeSeries.commonEngineFunc();
+threeSeries.start();
+threeSeries.stop();
+threeSeries.cruiseControl();
 
 var fiveSeries = new FiveSeries("BMW","535","2018",false);
 console.log(fiveSeries.parkingAssistEnabled);
 console.log(fiveSeries.make);
 console.log(fiveSeries.model);
 console.log(fiveSeries.year);
+fiveSeries.commonEngineFunc();
+fiveSeries.start();
+fiveSeries.stop();
+fiveSeries.parkingAssist();

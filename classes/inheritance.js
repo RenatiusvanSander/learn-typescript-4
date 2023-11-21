@@ -37,6 +37,10 @@ var ThreeSeries = /** @class */ (function (_super) {
         _this.cruiseControlEnabled = cruiseControlEnabled;
         return _this;
     }
+    ThreeSeries.prototype.cruiseControl = function () {
+        this.cruiseControlEnabled = true;
+        console.log("Cruising");
+    };
     return ThreeSeries;
 }(BMW));
 var FiveSeries = /** @class */ (function (_super) {
@@ -46,6 +50,10 @@ var FiveSeries = /** @class */ (function (_super) {
         _this.parkingAssistEnabled = parkingAssistEnabled;
         return _this;
     }
+    FiveSeries.prototype.parkingAssist = function () {
+        this.parkingAssistEnabled = true;
+        console.log("assist parking");
+    };
     return FiveSeries;
 }(BMW));
 var threeSeries = new ThreeSeries("BMW", "328i", "2018", false);
@@ -53,8 +61,16 @@ console.log(threeSeries.cruiseControlEnabled);
 console.log(threeSeries.make);
 console.log(threeSeries.model);
 console.log(threeSeries.year);
+threeSeries.commonEngineFunc();
+threeSeries.start();
+threeSeries.stop();
+threeSeries.cruiseControl();
 var fiveSeries = new FiveSeries("BMW", "535", "2018", false);
 console.log(fiveSeries.parkingAssistEnabled);
 console.log(fiveSeries.make);
 console.log(fiveSeries.model);
 console.log(fiveSeries.year);
+fiveSeries.commonEngineFunc();
+fiveSeries.start();
+fiveSeries.stop();
+fiveSeries.parkingAssist();
