@@ -34,6 +34,14 @@ class ThreeSeries extends BMW {
         super(make,model,year);
         this.cruiseControlEnabled = cruiseControlEnabled;
     }
+    
+    start() {
+        console.log("Button Start");
+    }
+
+    stop() {
+        console.log("Button Stop");
+    }
 }
 
 class FiveSeries extends BMW {
@@ -47,6 +55,15 @@ class FiveSeries extends BMW {
     constructor(make:string, model:string, year:string, parkingAssistEnabled:boolean) {
         super(make,model,year);
         this.parkingAssistEnabled = parkingAssistEnabled;
+    }
+
+    
+    start() {
+        console.log("Remote Start");
+    }
+
+    stop() {
+        console.log("Remote Stop");
     }
 }
 

@@ -41,6 +41,12 @@ var ThreeSeries = /** @class */ (function (_super) {
         this.cruiseControlEnabled = true;
         console.log("Cruising");
     };
+    ThreeSeries.prototype.start = function () {
+        console.log("Button Start");
+    };
+    ThreeSeries.prototype.stop = function () {
+        console.log("Button Stop");
+    };
     return ThreeSeries;
 }(BMW));
 var FiveSeries = /** @class */ (function (_super) {
@@ -53,6 +59,12 @@ var FiveSeries = /** @class */ (function (_super) {
     FiveSeries.prototype.parkingAssist = function () {
         this.parkingAssistEnabled = true;
         console.log("assist parking");
+    };
+    FiveSeries.prototype.start = function () {
+        console.log("Remote Start");
+    };
+    FiveSeries.prototype.stop = function () {
+        console.log("Remote Stop");
     };
     return FiveSeries;
 }(BMW));
