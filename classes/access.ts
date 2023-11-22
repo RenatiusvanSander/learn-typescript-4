@@ -1,6 +1,19 @@
 class Student {
-    public readonly name:string;
+    public _name:string;
+
+    display() {
+        console.log(this._name);
+    }
+
+    get name():string {
+        return this._name;
+    }
+
+    set name(name:string) {
+        this._name = name;
+    }
 }
 
 var student = new Student();
-//student.name = "John";
+student.name = "Bob";
+console.log(student.name)
