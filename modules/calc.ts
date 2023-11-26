@@ -1,9 +1,7 @@
-function add(x:number, y:number):number {
+export default function add(x:number, y:number):number {
     return x + y;
 }
 
-function sub(x:number, y:number) {
+export function sub(x:number, y:number) {
     return x-y;
 }
-
-export {add, sub};
