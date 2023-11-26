@@ -1,4 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var calc_1 = require("./calc");
-console.log((0, calc_1.default)(2, 3));
+var calculator = new calc_1.Calculator();
+console.log(calculator.add(2, 3));

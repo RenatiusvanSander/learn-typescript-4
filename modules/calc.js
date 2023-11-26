@@ -1,11 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sub = void 0;
-function add(x, y) {
-    return x + y;
-}
-exports.default = add;
-function sub(x, y) {
-    return x - y;
-}
-exports.sub = sub;
+exports.Calculator = void 0;
+var Calculator = /** @class */ (function () {
+    function Calculator() {
+    }
+    Calculator.prototype.add = function (x, y) {
+        return x + y;
+    };
+    Calculator.prototype.sub = function (x, y) {
+        return x - y;
+    };
+    return Calculator;
+}());
+exports.Calculator = Calculator;
