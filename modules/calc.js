@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Calculator = void 0;
+exports.Calculator1 = void 0;
 var Calculator = /** @class */ (function () {
     function Calculator() {
     }
@@ -12,4 +12,16 @@ var Calculator = /** @class */ (function () {
     };
     return Calculator;
 }());
-exports.Calculator = Calculator;
+exports.default = Calculator;
+var Calculator1 = /** @class */ (function () {
+    function Calculator1() {
+    }
+    Calculator1.prototype.add = function (x, y) {
+        return x + y;
+    };
+    Calculator1.prototype.sub = function (x, y) {
+        return x - y;
+    };
+    return Calculator1;
+}());
+exports.Calculator1 = Calculator1;
